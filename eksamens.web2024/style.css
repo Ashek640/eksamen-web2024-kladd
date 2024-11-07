@@ -1,0 +1,66 @@
+.navigasjonsbar {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 5%;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #000;
+  }
+  
+  .footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1px;
+    margin: 1%;
+  }
+  
+  .footer p {
+    padding: 0%;
+    margin: 2%;
+  }
+  
+  .overskrifter {
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .Adresse {
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+  }
+  
+  .sosialemedier {
+    margin: 2%;
+  }
+  
+  .søkefelt {
+    height: 40px;
+    font-size: 20px;
+    width: 80%;
+  }
+  
+  .søkeknapp {
+    font-size: 25px;
+    margin: 1%;
+  }
+  
+  .produktbilde {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .produktnavn {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 1%;
+  }
+  
+  .produktpriser {
+    font-size: 20px;
+    margin: 1%;
+  }
