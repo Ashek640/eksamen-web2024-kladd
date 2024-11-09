@@ -59,8 +59,114 @@
     font-weight: bold;
     margin: 1%;
   }
-  
+
+  .produktdetaljer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .merkenavn {
+    font-size: 20px;
+    margin: 1%;
+  }
+
+  .farge {
+    font-size: 20px;
+    margin: 1%;
+  }
+
   .produktpriser {
     font-size: 20px;
     margin: 1%;
   }
+
+  .Kategorieoverskrift {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+  }
+
+  .anmeldelseroverskrift {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 35px;
+  }
+
+  .anmeldelsesbilde {
+    height: 120px;
+    border-radius: 5%;
+  }
+
+  .anmeldelsenavn {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0%;
+  }
+
+  .anmeldelse {
+    margin: 0%;
+  }
+
+
+  .anmeldelseseksjon {
+    display: flex;
+    gap: 2%;
+    margin-top: 5%;
+  }
+
+  .promotering {
+  height: 250px;
+  background-color: rgb(185, 178, 178);
+  color: black;
+  padding: 10%;
+  font-size: large;
+  margin-bottom: 5%;
+  }
+
+  .promotering button{
+  border-color: red;
+  height: 50px;
+  width: 150px;
+  font-size: large;
+  cursor: pointer;
+  }
+
+  .reklame {
+    text-align: center;
+  }
+
+  .bokser {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+  }
+
+  .boks {
+    height: 100px;
+    width: 30%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .likeprodukter {
+    text-align: center;
+  }
+
+  .handlekurvoverskrift{
+    text-align: center;
+  }
+
+  .menylinjen{
+    display: flex;
+    gap: 3%;
+    font-size: 20px;
+  }
+
+
+
