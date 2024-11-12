@@ -168,5 +168,40 @@
     font-size: 20px;
   }
 
+  .menylinjen a {
+    display: flex;
+    gap: 3%;
+    font-size: 20px;
+  }
+
+
+  .shippingoverskrift {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .shippingoverskrift input {
+    height: 35px;
+  }
+
+  .shippingoverskrift button {
+    background-color: black;
+    color: white;
+    width: 100px;
+    height: 35px;
+  }
+
+  .shippingforslag {
+    font-size: 20px;
+  }
+
+  .shipping {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    margin-top: 10px;
+  }
+
 
 
