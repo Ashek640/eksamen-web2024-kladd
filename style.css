@@ -1,3 +1,8 @@
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 .navigasjonsbar {
     display: flex;
     flex-direction: column;
@@ -7,7 +12,7 @@
   
   a {
     text-decoration: none;
-    font-size: 30px;
+    font-size: 22px;
     color: #000;
   }
   
@@ -24,8 +29,27 @@
   }
   
   .overskrifter {
+    display: flex;
     font-size: 30px;
     font-weight: bold;
+    margin: 1%;
+  }
+    /* Stiler for ul-liste med ikoner */
+
+  .overskrifter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  /* Stiler for ul-liste med ikoner */
+  .sosialemedier-liste {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
   }
   
   .Adresse {
@@ -113,13 +137,19 @@
 
 
   .anmeldelseseksjon {
-    display: flex;
+    display: grid;
     gap: 2%;
     margin-top: 5%;
   }
+  ul{
+    list-style: none;
+  }
+  li{
+    list-style:none ;
+  }
 
   .promotering {
-  height: 250px;
+  height: 400px;
   background-color: rgb(185, 178, 178);
   color: black;
   padding: 10%;
@@ -203,5 +233,30 @@
     margin-top: 10px;
   }
 
+  
+  
 
+  @media screen and (min-width: 1024px) {
+    .navigasjonsbar {
+      display: flex;
+      flex-direction: row;
+      gap: 2%;
+    }
+    
+    .footerseksjoner {
+      display: grid;
+      grid-template-columns: 33% 33% 33%;
+     
+    }
+
+    .produktseksjoner {
+      display: grid;
+      grid-template-columns: 28% 28% 28%;
+      gap: 7%;
+      margin-bottom: 15%;
+      row-gap: 60px;
+    }
+  }
+
+  
 
