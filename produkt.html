@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="nb">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <nav class="navigasjonsbar">
-      <section>
-        <input type="tekst" placeholder="Søk her" class="søkefelt" />
-        <i class="fas fa-search søkeknapp"></i>
-      </section>
-      <a href="index.html">Hjem</a>
-      <a href="produkt.html">Produkter</a>
-      <a href="index.html">Logo</a>
-      <a href="index.html">Kategorier</a>
-      <a href="index.html">kontakt oss</a>
-      <a href="index.html"><i class="fas fa-user"></i></a>
-      <a href="index.html"><i class="fas fa-heart"></i></a>
-      <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
-    </nav>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Document</title>
+</head>
+<body>
+  <!--Søkefelt-->
+  <nav class="navigasjonsbar">
+      <input type="tekst" placeholder="Søk her" class="søkefelt" />
+      <i class="fas fa-search søkeknapp"></i>    
+      <ul class="navliste">
+        <li><a href="index.html">Hjem</a></li>
+        <li><a href="produkt.html">Produkter</a></li>
+        <li><a href="index.html">Logo</a></li>
+        <li><a href="index.html">Kategorier</a></li>
+        <li><a href="index.html">kontakt oss</a></li>
+        <li><a href="index.html"><span class="sr-only">bruker</span><i class="fas fa-user"></i></a></li>
+        <li><a href="index.html"><span class="sr-only">Favoriter</span><i class="fas fa-heart"></i></a></li>
+        <li><a href="checkout.html"><span class="sr-only">handlekurv</span><i class="fas fa-shopping-cart"></i></a></li>
+      </ul>
+  </nav>
 
-    <section>
-        <aside class="menylinjen">
-            <p>hjem</p>
-            <p>></p>
-            <p>katogori</p>
-            <p>></p>
-            <p><b>produkter</b></p>
-        </aside>
+    <section>        
+          <ul class="menylinjen">
+            <li><a href="index.html">Hjem</a></li>
+            <li>></li>
+            <li><a href="index.html">Kategori</a></li>
+            <li>></li>
+            <li><a href="produkt.html"><b>Produkter</b></a></li>
+          </ul>
+      
         <img
         class="produktbilde"
         src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
@@ -47,6 +46,9 @@
         class="produktbilde"
         src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
       />
+
+
+      
       <aside>
         <p class="produktnavn">produkt navn</p>
         <p class="merkenavn">merke navn</p>
@@ -54,74 +56,84 @@
         <p class="farge">farge grå</p>
       </aside>
     </section>
-    
-    <h2 class="likeprodukter">kanskje du liker dette også</h2>
+    <ul>
+      <li class="produktnavn"><h4>Produktnavn</h4>sipan</li>
+      <li class="merkenavn"><h4>Merkenavn</h4>Majid</li>
+      <li class="produktpris"><h4>Produktpris</h4>Khalil</li>
+      <li class="farge"><h4>Farge</h4>Dilbrin</li>
+    </ul>
+
+
+
+    <h2 class="lignendeprodukter">Lignende produkter</h2>
     <section>
         <img
         class="produktbilde"
         src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
       />
-      <aside class="produktdetaljer">
-      <p class="produktnavn">Fotball</p>
-      <p class="produktpris">800kr</p>
-      </aside>
+      <article class="produktdetaljer">
+      <h3 class="produktnavn">Fotball</h3>
+      <h4 class="produktpris">800kr</h4>
+      </article>
 
       <img
         class="produktbilde"
         src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
       />
-      <aside class="produktdetaljer">
-      <p class="produktnavn">Fotball</p>
-      <p class="produktpris">800kr</p>
-      </aside>
+      <article class="produktdetaljer">
+        <h3 class="produktnavn">Fotball</h3>
+        <h4 class="produktpris">800kr</h4>
+        </article>
 
       <img
         class="produktbilde"
         src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
       />
-      <aside class="produktdetaljer">
-      <p class="produktnavn">Fotball</p>
-      <p class="produktpris">800kr</p>
-      </aside>
-
+      <article class="produktdetaljer">
+        <h3 class="produktnavn">Fotball</h3>
+        <h4 class="produktpris">800kr</h4>
+        </article>
     </section>
 
-
     <footer class="footer">
-      <p class="overskrifter">Logo</p>
-      <p class="Adresse">
-        At vero eos accusamus et iusto odio dignissimos ducimus qui blandtiis
-      </p>
-      <aside class="footerseksjoner">
-      <aside>
-      <p class="overskrifter">Kontakt</p>
-      <p class="Adresse">
-        <i class="fas fa-map-marker-alt"></i>Adresse:Torvaldlyst 15, 1738
-      </p>
-      <p class="Adresse">
-        <i class="fas fa-phone-alt"></i>Telefon:+47 96812813
-      </p>
-      <p class="Adresse">
-        <i class="fas fa-envelope"></i>E-post:asheka@hiof.no
-      </p>
-      <p class="Adresse"><i class="fas fa-clock"></i>Åpningtider:07:30-16.00</p>
-      </aside>
-      <aside>
-      <p class="overskrifter">Snarveier</p>
-      <p><a class="Adresse" href="produkt.html">produkt</a></p>
-      <p><a class="Adresse" href="index.html">kategorie</a></p>
-      <p><a class="Adresse" href="index.html">kontakt oss</a></p>
-      </aside>
-      <aside>
-      <p class="overskrifter">Sosiale medier</p>
-      <section>
-        <a class="sosialemedier" href="index.html"><i class="fab fa-instagram"></i></a>
-        <a class="sosialemedier" href="index.html"><i class="fab fa-facebook-f"></i></a>
-        <a class="sosialemedier" href="index.html"><i class="fab fa-linkedin-in"></i></a>
-        <a class="sosialemedier" href="index.html"><i class="fab fa-pinterest"></i></a>
-      </section>
-    </aside>
-    </aside>
-    </footer>
-    </body>
+      <section class="footer-logo-seksjon">
+        <p class="footer-logo">Logo</p>
+          <p class="Adresse">
+            At vero eos accusamus et iusto odio dignissimos ducimus qui blandtiis
+          </p>
+        </section>
+      
+        <section class="footerseksjoner">
+          <section class="footer-content">
+            <h4 class="overskrifter">Kontakt</h4>
+            <ul class="fotlister kontakt-info">
+              <li><i class="fas fa-map-marker-alt"></i><b>Adresse:</b>Torvaldlyst 15, 1738</li>
+              <li><i class="fas fa-phone-alt"></i><b>Telefon: </b>+47 96812813</li>
+              <li><i class="fas fa-envelope"></i><b>E-post: </b>asheka@hiof.no</li>
+              <li><i class="fas fa-clock"></i><b>Åpningstider: </b>07:30-16.00</li>
+            </ul>
+          </section>
+        
+      
+          <section class="footer-content">
+          <h4 class="overskrifter">Snarveier</h4>
+          <ul class="fotlister">
+            <li><a href="produkt.html">Produkt</a></li>
+            <li><a href="index.html">Kategorier</a></li>
+            <li><a href="index.html">Kontakt oss</a></li>
+          </ul>
+       </section>
+    
+       <section class="footer-content">
+          <h4 class="overskrifter">Sosiale medier</h4>
+          <ul class="sosialemedier-ikoner fotlister">
+            <li><a class="sosialemedier" href="index.html"><i class="fab fa-instagram"></i></a></li>
+            <li><a class="sosialemedier" href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a class="sosialemedier" href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a class="sosialemedier" href="index.html"><i class="fab fa-pinterest"></i></a></li>
+          </ul>
+        </section>
+    </section>
+      </footer>
+  </body>
   </html>

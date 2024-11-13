@@ -5,39 +5,42 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="./style.css" />
   <title>Document</title>
 </head>
-
 <body>
+  <div class="container">
+<header>
+
   <!--Søkefelt-->
   <nav class="navigasjonsbar">
-    <header>
-      <input type="tekst" placeholder="Søk her" class="søkefelt" />
-      <i class="fas fa-search søkeknapp"></i>
-      <!--   -->
-    </header>
-    <a href="index.html">Hjem</a>
-    <a href="produkt.html">Produkter</a>
-    <a href="index.html">Logo</a>
-    <a href="index.html">Kategorier</a>
-    <a href="index.html">kontakt oss</a>
-    <a href="index.html"><i class="fas fa-user"></i></a>
-    <a href="index.html"><i class="fas fa-heart"></i></a>
-    <a href="checkout.html"><i class="fas fa-shopping-cart"></i></a>
+    <input type="tekst" placeholder="Søk her" class="søkefelt" />
+    <i class="fas fa-search søkeknapp"></i>    
+    <ul class="navliste">
+      <li><a href="index.html">Hjem</a></li>
+      <li><a href="produkt.html">Produkter</a></li>
+      <li><a href="index.html">Logo</a></li>
+      <li><a href="index.html">Kategorier</a></li>
+      <li><a href="index.html">kontakt oss</a></li>
+      <li><a href="index.html"><span class="sr-only">bruker</span><i class="fas fa-user"></i></a></li>
+      <li><a href="index.html"><span class="sr-only">Favoriter</span><i class="fas fa-heart"></i></a></li>
+      <li><a href="checkout.html"><span class="sr-only">handlekurv</span><i class="fas fa-shopping-cart"></i></a></li>
+    </ul>
   </nav>
+  </header>
+ 
 
-  <section class="promotering">
-    <h2> Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-      accusantium doloremque laudantium, totam rem aperiam
+    <main>
+      <section class="promotering">
+        <h2> Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+          accusantium doloremque laudantium, totam rem aperiam
     </h2>
     <p>
       Sed ut perspiciatis unde omnis iste natus error sit voluptatem
       accusantium doloremque laudantium, totam rem aperiam
     </p>
-    <button>SHOPP NÅ</button>
+    <a href="#" class="button">SHOPP NÅ</a>
   </section>
-
   <section class="reklame">
     <h2>Sed ut perspiciatis unde omnis iste natus error sit voluptatem</h2>
     <p>
@@ -50,58 +53,60 @@
       <aside class="boks">best selger</aside>
     </aside>
   </section>
-  <aside class="produktseksjoner">
-    <section>
+  
+  <section class="produktseksjoner">
+    <article>
       <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">1200kr</p>
-    </section>
-
-    <section>
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+    
+    <article>
       <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">1200kr</p>
-    </section>
-
-    <section>
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+    
+    <article>
       <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">1200kr</p>
-    </section>
-
-    <section>
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+    
+    <article>
       <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">1200kr</p>
-    </section>
-
-    <section>
-      <img class="produktbilde" src="https://cdn.midjourney.com/ad1e26b4-3071-4e58-a22a-2c765102a8df/0_1.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">900kr</p>
-    </section>
-
-    <section>
-      <img class="produktbilde" src="https://cdn.midjourney.com/040f79f3-00f1-4259-b4e5-350a33bc4e2f/0_0.png" />
-      <p class="produktnavn">Produkt Navn</p>
-      <p class="produktpriser">1000kr</p>
-    </section>
-  </aside>
-
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+    
+    <article>
+      <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+    
+    <article>
+      <img class="produktbilde" src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png" />
+      <h3 class="produktnavn">Produkt Navn</h3>
+      <h4 class="produktpriser">1200kr</h4>
+    </article>
+  </section>
+  
+  
   <section>
-    <h2 class="Kategorieoverskrift">mest populære produkter</h2>
+    <h2 class="Kategorieoverskrift">Mest Populære Produkter</h2>
     <img class="produktbilde" src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png" />
-
-    <img class="produktbilde" src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png" />
-
-    <img class="produktbilde" src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png" />
+    
+    <!-- <img class="produktbilde" src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png" />
+    
+    <img class="produktbilde" src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png" /> -->
   </section>
-
-
+  
+  
+  <h2 class="anmeldelseroverskrift">Anmeldelser</h2>
   <section class="anmeldelseseksjon">
-    <h2 class="anmeldelseroverskrift">anmeldelser</h2>
     <article>
-      <p class="anmeldelsenavn">Navn</p>
+      <h2 class="anmeldelsenavn">Navn</h2>
       <p class="anmeldelse">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -113,7 +118,7 @@
       </p>
     </article>
     <article>
-      <p class="anmeldelsenavn">Navn</p>
+      <h2 class="anmeldelsenavn">Navn</h2>
       <p class="anmeldelse">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -125,7 +130,7 @@
       </p>
     </article>
     <article>
-      <p class="anmeldelsenavn">Navn</p>
+      <h2 class="anmeldelsenavn">Navn</h2>
       <p class="anmeldelse">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -137,7 +142,7 @@
       </p>
     </article>
     <article>
-      <p class="anmeldelsenavn">Navn</p>
+      <h2 class="anmeldelsenavn">Navn</h2>
       <p class="anmeldelse">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
         eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -147,55 +152,52 @@
         pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
         culpa qui officia deserunt mollit anim id est laborum
       </p>
-
-
-
-
-
-
-
-
+    </article>
   </section>
+  
+</main>
 
-  <footer class="footer">
-    <p class="overskrifter">Logo</p>
-    <p class="Adresse">
-      At vero eos accusamus et iusto odio dignissimos ducimus qui blandtiis
-    </p>
-
-    <h2 class="overskrifter">logo</h2>
-    <address class="Adresse">At vero eos accusamus et iusto odio dignissimos ducimus qui blandtiis</address>
-
-    <aside class="footerseksjoner">
-      <section class="overskrifter">
-        <h4 class="overskrifter">kontakt</h4>
-        <ul class="kontakt-info">
-          <li class="Adresse"><i class="fas fa-map-marker-alt"></i>Adresse:Torvaldlyst 15, 1738</li>
-          <li class="Adresse"><i class="fas fa-phone-alt"></i>Telefon:+47 96812813</li>
-          <li class="Adresse"><i class="fas fa-envelope"></i>E-post:asheka@hiof.no</li>
-          <li class="Adresse"><i class="fas fa-clock"></i>Åpningtider:07:30-16.00</p></li>
+<footer class="footer">
+  <section class="footer-logo-seksjon">
+    <p class="footer-logo">Logo</p>
+      <p class="Adresse">
+        At vero eos accusamus et iusto odio dignissimos ducimus qui blandtiis
+      </p>
+    </section>
+  
+    <section class="footerseksjoner">
+      <section class="footer-content">
+        <h4 class="overskrifter">Kontakt</h4>
+        <ul class="fotlister kontakt-info">
+          <li><i class="fas fa-map-marker-alt"></i><b>Adresse:</b>Torvaldlyst 15, 1738</li>
+          <li><i class="fas fa-phone-alt"></i><b>Telefon: </b>+47 96812813</li>
+          <li><i class="fas fa-envelope"></i><b>E-post: </b>asheka@hiof.no</li>
+          <li><i class="fas fa-clock"></i><b>Åpningstider: </b>07:30-16.00</li>
         </ul>
       </section>
+    
+  
+      <section class="footer-content">
+      <h4 class="overskrifter">Snarveier</h4>
+      <ul class="fotlister">
+        <li><a href="produkt.html">Produkt</a></li>
+        <li><a href="index.html">Kategorier</a></li>
+        <li><a href="index.html">Kontakt oss</a></li>
+      </ul>
+   </section>
 
-      <section class="overskrifter">
-        <h4>Snarveier</h4>
-        <ul>
-          <li> <a class="Adresse" href="produkt.html">produkt</a></li>
-          <li> <a class="Adresse" href="index.html">kategorie</a></li>
-          <li> <a class="Adresse" href="index.html">kontakt oss</a></li>
-        </ul>
-      </section>
-      <section class="overskrifter">
-        <h4 id="sos">Sosiale medier</h4>
-        <ul class="sosialemedier-liste">
-          <li><a class="sosialemedier" href="index.html"><i class="fab fa-instagram"></i></a></li>
-          <li><a class="sosialemedier" href="index.html"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a class="sosialemedier" href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
-          <li><a class="sosialemedier" href="index.html"><i class="fab fa-pinterest"></i></a></li>
-        </ul>
-      </section>
-      </aside>
-
+   <section class="footer-content">
+      <h4 class="overskrifter">Sosiale medier</h4>
+      <ul class="sosialemedier-ikoner fotlister">
+        <li><a class="sosialemedier" href="index.html"><i class="fab fa-instagram"></i></a></li>
+        <li><a class="sosialemedier" href="index.html"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a class="sosialemedier" href="index.html"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a class="sosialemedier" href="index.html"><i class="fab fa-pinterest"></i></a></li>
+      </ul>
+    </section>
+</section>
   </footer>
+</div>
+  
 </body>
 </html>
