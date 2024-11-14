@@ -114,6 +114,94 @@ a {
 /*  */
 
 
+/*hovedinhold index.html  */
+
+.promotering {
+  height: 400px;
+  background-color: rgb(185, 178, 178);
+  color: black;
+  padding: 10%;
+  font-size: large;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  text-align: right;
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  padding: 17px 20px;
+  background-color: white; /* Farge på knappen */
+  color: black; /* Tekstfarge */
+  border-radius: 1000px;
+  text-decoration: none; /* Fjerner understrek på lenker */
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button:hover {
+  background-color: #030303; /* Farge ved hover */
+  color: white;
+}
+
+.piler-venstre {
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 50%;
+  opacity: 60%;
+  position: absolute;
+  left: 1%;
+  top: 45%;
+}
+
+.piler-høyre {
+  background-color: rgb(255, 255, 255);
+  font-size: 20px;
+  padding: 15px 15px;
+  border-radius: 50%;
+  opacity: 60%;
+  position: absolute;
+  right: 1%;
+  top: 45%;
+}
+
+
+
+
+/* anmeldelser */
+
+.anmeldelser {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 5%;
+  border-radius: 20px;
+  row-gap: 5px;
+  
+}
+
+.anmeldelseseksjon {
+    display: grid;
+    gap: 2%;
+    margin-top: 5%;
+    grid-template-columns: 24% 24% 24% 24%;
+    margin-bottom: 5%;
+}
+ 
+.anmeldelsesbilde {
+  border-radius: 50%;
+  height: 100px;
+}
+
+.anmeldelsenavn {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+/*  */
+
+
 /* hovedinhold produktsiden () */
 
 .menylinjen {
@@ -185,27 +273,15 @@ a {
   font-size: 35px;
 }
 
-.anmeldelsesbilde {
-  height: 120px;
-  border-radius: 5%;
-}
 
-.anmeldelsenavn {
-  font-weight: bold;
-  font-size: 20px;
-  margin: 0%;
-}
+
+
 
 .anmeldelse {
   margin: 0%;
 }
 
 
-.anmeldelseseksjon {
-  display: flex;
-  gap: 2%;
-  margin-top: 5%;
-}
 
 ul {
   list-style: none;
@@ -215,22 +291,6 @@ li {
   list-style: none;
 }
 
-.promotering {
-  height: 400px;
-  background-color: rgb(185, 178, 178);
-  color: black;
-  padding: 10%;
-  font-size: large;
-  margin-bottom: 5%;
-}
-
-.promotering button {
-  border-color: red;
-  height: 50px;
-  width: 150px;
-  font-size: large;
-  cursor: pointer;
-}
 
 .reklame {
   text-align: center;
@@ -289,22 +349,7 @@ li {
 }
 
 /*    */
-.button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #007bff; /* Farge på knappen */
-  color: white; /* Tekstfarge */
-  text-decoration: none; /* Fjerner understrek på lenker */
-  font-weight: bold;
-  font-size: 16px;
-  border-radius: 4px; /* Runde hjørner */
-  text-align: center;
-  transition: background-color 0.3s ease; /* Overgangseffekt */
-}
 
-.button:hover {
-  background-color: #0056b3; /* Farge ved hover */
-}
 
 
 
