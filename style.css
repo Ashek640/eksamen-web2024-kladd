@@ -4,8 +4,9 @@
 }
 body {
   max-width: 1200px;
-  margin: 0 20px 0 20px;
+  margin: 0 auto;
   font-family:Arial, Helvetica, sans-serif;
+  padding: 5%;
 }
 .container{
   /* display: grid; */
@@ -18,8 +19,8 @@ body {
 .navigasjonsbar {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin: 5%;
+  justify-content: space-between;
+  margin-bottom: 5%;
 }
 
 .navliste {
@@ -38,16 +39,28 @@ a {
 
 }
 
+.søkefelt-ikon {
+width: 25%;
+position: relative;
+
+}
+
 .søkefelt {
-  height: 40px;
-  font-size: 20px;
-  width: 80%;
+  height: 32px;
+  padding: 1%;
+  font-size: 12px;
+  width: 100%;
   border-radius: 25px;
+  border: 1.5px solid black;
+  outline: none;
 }
 
 .søkeknapp {
-  font-size: 25px;
+  font-size: 14px;
   margin: 1%;
+  position: absolute;
+  right: 12px;
+  top: 25%;
 }
 
 /* styling for footer */
@@ -168,21 +181,57 @@ a {
 
 
 
+/* produkter */
+
+.produktbilde {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.produktnavn {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1%;
+}
+
+.produkt-navn-pris {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+.produktpriser {
+  font-size: 18px;
+  margin: 1%;
+  font-weight: normal;
+}
+
+.produktseksjoner {
+
+}
 
 /* anmeldelser */
+.anmeldelseroverskrift {
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  align-items: center;
+  font-size: 35px;
+}
 
 .anmeldelser {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 5%;
   border-radius: 20px;
   row-gap: 5px;
-  
 }
 
 .anmeldelseseksjon {
     display: grid;
-    gap: 2%;
-    margin-top: 5%;
+    justify-content: space-between;
+    margin-top: 2%;
     grid-template-columns: 24% 24% 24% 24%;
     margin-bottom: 5%;
 }
@@ -195,9 +244,14 @@ a {
 .anmeldelsenavn {
   font-weight: bold;
   font-size: 20px;
-  margin-top: 2%;
-  margin-bottom: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
+
+.anmeldelse {
+ margin-top: 5%;
+}
+
 
 /*  */
 
@@ -220,27 +274,15 @@ a {
   text-align: center;
 }
 
-.produktbilde {
-  height: 100%;
-  width: 100%;
-}
 
 .produktdetaljer {
   display: flex;
   justify-content: space-between;
 }
 
-.produktnavn {
-  font-size: 20px;
-  font-weight: normal;
-  margin: 1%;
-}
 
-.produktpriser {
-  font-size: 20px;
-  margin: 1%;
-  font-weight: normal;
-}
+
+
 
 .merkenavn {
   font-size: 20px;
@@ -265,21 +307,12 @@ a {
   font-size: 35px;
 }
 
-.anmeldelseroverskrift {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  font-size: 35px;
-}
 
 
 
 
 
-.anmeldelse {
-  margin: 0%;
-}
+
 
 
 
@@ -357,8 +390,9 @@ li {
   .navigasjonsbar {
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    justify-content: space-between;
   }
+
 
   .footerseksjoner {
     display: grid;
@@ -368,8 +402,8 @@ li {
 
   .produktseksjoner {
     display: grid;
-    grid-template-columns: 28% 28% 28%;
-    gap: 7%;
+    grid-template-columns: 32.5% 32.5% 32.5%;
+    justify-content: space-between;
     margin-bottom: 15%;
     row-gap: 60px;
   }
