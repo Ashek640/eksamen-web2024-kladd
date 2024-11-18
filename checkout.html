@@ -29,96 +29,351 @@
     </ul>
   </nav>
 
-
-    <section>
-        <h2 class="handlekurvoverskrift">handlekurv</h2>
+  <section class="handlekurv">
+    <h1 class="handlekurv-overskrift">1. SHOPPINGBAGEN DIN</h1>
+    <ul class="produktliste">
+      <!-- Product 1 -->
+      <li class="produkt-rad">
         <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
-      />
+          src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+          alt="Produktbilde"
+          class="produktbilde"
+        />
+        <article class="produkt-detaljer">
+          <header>
+            <h2 class="produktnavn">PRODUCT NAME</h2>
+            <p class="produktpriser">Kr 1999</p>
+            <p class="farge">Farge: <span class="farge-navn">beige</span></p>
+          </header>
+          <section class="produktvalg">
+            <section class="størrelse">
+              <label for="størrelse1">Størrelse</label>
+              <select id="størrelse1" class="størrelse-nedtrekksliste">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </section>
+            <section class="antall">
+              <label for="antall1">Antall</label>
+              <input
+                id="antall1"
+                type="number"
+                value="1"
+                min="1"
+                class="antall-felt"
+              />
+            </section>
+          </section>
+        </article>
+        <nav class="produkt-ikoner">
+          <button class="ønskeliste-knapp" aria-label="Legg til ønskeliste">
+            ❤
+          </button>
+          <button class="slett-knapp" aria-label="Slett produkt">
+            <i class="fa-solid fa-trash trash-ikon"></i>
+          </button>
+        </nav>
+      </li>
 
-      <ul>
-        <li class="produktnavn">produkt navn</li>
-        <li class="merkenavn">merke navn</li>
-        <li class="produktpris">10000kr</li>
-        <li class="farge">farge grå</li>
-      </ul>
-      <img
-      class="produktbilde"
-      src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
-    />
-    <ul>
-      <li class="produktnavn">produkt navn</li>
-      <li class="merkenavn">merke navn</li>
-      <li class="produktpris">10000kr</li>
-      <li class="farge">farge grå</li>
+      <!-- Product 2 -->
+      <li class="produkt-rad">
+        <img
+          src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+          alt="Produktbilde"
+          class="produktbilde"
+        />
+        <article class="produkt-detaljer">
+          <header>
+            <h2 class="produktnavn">PRODUCT NAME</h2>
+            <p class="produktpriser">Kr 1999</p>
+            <p class="farge">Farge: <span class="farge-navn">beige</span></p>
+          </header>
+          <section class="produktvalg">
+            <section class="størrelse">
+              <label for="størrelse2">Størrelse</label>
+              <select id="størrelse2" class="størrelse-nedtrekksliste">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </section>
+            <section class="antall">
+              <label for="antall2">Antall</label>
+              <input
+                id="antall2"
+                type="number"
+                value="1"
+                min="1"
+                class="antall-felt"
+              />
+            </section>
+          </section>
+        </article>
+        <nav class="produkt-ikoner">
+          <button class="ønskeliste-knapp" aria-label="Legg til ønskeliste">
+            ❤
+          </button>
+          <button class="slett-knapp" aria-label="Slett produkt">
+            <i class="fa-solid fa-trash trash-ikon"></i>
+          </button>
+        </nav>
+      </li>
     </ul>
-    </section>
+  </section>
 
-    <section>
-      <h2>Adresse</h2>
-      <form class="shippingoverskrift">
-        <input type="text" placeholder="Fornavn *" />
-        <input type="text" placeholder="Etternavn *" />
-        <input type="text" placeholder="Address *" />
-        <input type="text" placeholder="By *" /> 
-        <input type="number" placeholder="Post Code *">
-        <button>lagre</button>
-      </form>
+  <section class="opplysninger">
+    <h2 class="opplysninger-overskrift">2. DINE OPPLYSNINGER</h2>
 
+    <!-- Address Section -->
+    <form class="adresse-skjema">
+      <section class="leveringsadresse">
+        <section class="felt-rad">
+          <label for="fornavn" class="etikett">
+            Leveringsadresse Fornavn</label
+          >
+          <input
+            type="text"
+            id="fornavn"
+            name="fornavn"
+            class="felt"
+            placeholder="Nora*"
+            required
+          />
+        </section>
+        <section class="felt-rad">
+          <label for="etternavn" class="etikett">Etternavn</label>
+          <input
+            type="text"
+            id="etternavn"
+            name="etternavn"
+            class="felt"
+            placeholder="Nordman*"
+            required
+          />
+        </section>
 
-      
+        <section class="felt-rad-full">
+          <label for="gateadresse" class="etikett">Gateadresse</label>
+          <input
+            type="text"
+            id="gateadresse"
+            name="gateadresse"
+            class="felt"
+            placeholder="BRA veien 4*"
+            required
+          />
+        </section>
 
-      <section class="shipping">
-        <h2>shipping</h2>
-        <ul class="shippingforslag">
-          <li></li>
-          <input type="radio" id="standard" value="Standard Domestic"/>
-        <label for="standard">Standard postnord</label>
-      </li>
-        </ul>
-        <ul class="shippingforslag">
-          <li>
-          <input type="radio" id="standard" value="Standard Domestic"/>
-        <label for="standard">Standard posten</label>
-      </li>
-        </ul>
-        <ul class="shippingforslag">
-          <li>
-          <input type="radio" id="standard" value="Standard Domestic"/>
-        <label for="standard">Standard helthjem</label>
-          </ul>
-        </aside>
+        <section class="felt-rad">
+          <label for="postnummer" class="etikett">Postnummer</label>
+          <input
+            type="number"
+            id="postnummer"
+            name="postnummer"
+            class="felt"
+            placeholder="1752*"
+            required
+          />
+        </section>
+        <section class="felt-rad">
+          <label for="poststed" class="etikett">Poststed</label>
+          <input
+            type="text"
+            id="poststed"
+            name="poststed"
+            class="felt"
+            placeholder="Halden*"
+            required
+          />
+        </section>
       </section>
 
+      <!-- Contact Information Section -->
+      <section class="kontaktinformasjon">
+        <section class="felt-rad-full">
+          <label for="epost" class="etikett">Kontaktinformasjon E-post</label>
+          <input
+            type="email"
+            id="epost"
+            name="epost"
+            class="felt"
+            placeholder="Noranordman@hiof.no.*"
+            required
+          />
+        </section>
 
+        <section class="felt-rad-full">
+          <label for="telefon" class="etikett">Telefon</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            class="felt"
+            placeholder="+4749***018"
+            required
+          />
+        </section>
+      </section>
 
+      <!-- Buttons -->
+      <footer class="knapper">
+        <button type="submit" class="lagre-knapp">Lagre</button>
+        <a href="#" class="avbryt-lenke">Avbryt</a>
+      </footer>
+    </form>
+  </section>
 
+  <section class="levering">
+    <h2 class="levering-overskrift">3. LEVERING</h2>
+    <section class="leveringsvalg">
+      <!-- Option 1 -->
+      <article class="valg-alternativ">
+        <input
+          type="radio"
+          id="express-hjemlevering"
+          name="leveringsvalg"
+          class="valg-radio"
+        />
+        <label for="express-hjemlevering" class="valg-etikett">
+          <header class="valg-header">
+            <span class="valg-tittel">Express Hjemlevering</span>
+            <span class="valg-pris">59 kr 🚚</span>
+          </header>
+          <p class="valg-info">3-4 Virkedager</p>
+          <p class="valg-beskrivelse">
+            Bestill hverdag før 08:00* for levering neste arbeidsdag. Leveres
+            hjem til deg før frokost mandag til lørdag. *For levering til
+            postnummer 4000-7999 er leveringstiden 2 arbeidsdager, for
+            postnummer 8000-9999 er leveringstiden 3 arbeidsdager.
+          </p>
+        </label>
+      </article>
 
+      <!-- Option 2 -->
+      <article class="valg-alternativ">
+        <input
+          type="radio"
+          id="express-utlevering"
+          name="leveringsvalg"
+          class="valg-radio"
+        />
+        <label for="express-utlevering" class="valg-etikett">
+          <header class="valg-header">
+            <span class="valg-tittel"
+              >Ekspress Pakke til utleveringssted</span
+            >
+            <span class="valg-pris">59 kr 📦</span>
+          </header>
+          <p class="valg-info">1-3 Virkedager</p>
+        </label>
+      </article>
 
-      <section>
-        <h2>betaling</h2>
-        <form class="shippingoverskrift">
-          <label for="card">kortnummer</label>
-          <input id="card" type="number" placeholder="342342****4435" />
-          <label for="date">Expiry</label>
-          <input id="date" type="date" />
-          <label for="cvv">CVC/CVV</label>
-          <input id="cvv" type="number" placeholder="CVV *">
-          <p>100kr ink mva </p>
-          <button>betal nå</button>
-          <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga</p>
-        </form>
-      <input type="checkbox" id="subscribe"/>
-      <label for="subscribe">Yes, send me emails about offers and promotions</label>
-      <input type="checkbox" id="subscribe"/>
-      <label for="subscribe">Yes, send me emails about offers and promotions</label>
+      <!-- Option 3 -->
+      <article class="valg-alternativ">
+        <input
+          type="radio"
+          id="standard-hjemlevering"
+          name="leveringsvalg"
+          class="valg-radio"
+        />
+        <label for="standard-hjemlevering" class="valg-etikett">
+          <header class="valg-header">
+            <span class="valg-tittel">Standard Hjemlevering</span>
+            <span class="valg-pris">Gratis 🛍️</span>
+          </header>
+          <p class="valg-info">5-8 Virkedager</p>
+          <p class="valg-beskrivelse">
+            Leveres hjem til deg før frokost mandag til lørdag innen 4-7
+            hverdager.
+          </p>
+        </label>
+      </article>
     </section>
-    <hr class="solid">
+  </section>
 
+  <section class="betaling">
+    <h2 class="betaling-overskrift">4. BETALING</h2>
 
+    <!-- Card Payment Section -->
+    <form class="betalingsskjema">
+      <fieldset class="kortdetaljer">
+        <legend class="kortdetaljer-tittel">
+          BETAL MED KORT <span aria-hidden="true">💳</span>
+        </legend>
 
+        <section class="felt-rad-full">
+          <label for="kortnummer" class="etikett">Kortnummer</label>
+          <input
+            type="text"
+            id="kortnummer"
+            name="kortnummer"
+            class="felt"
+            placeholder="342342****4435"
+            readonly
+          />
+        </section>
 
+        <section class="felt-rad-rad">
+          <section class="felt-rad">
+            <label for="utlopsdato" class="etikett">Utløpsdato</label>
+            <input
+              type="text"
+              id="utlopsdato"
+              name="utlopsdato"
+              class="felt"
+              placeholder="mm / dd / yyyy"
+            />
+          </section>
+          <section class="felt-rad">
+            <label for="cvc" class="etikett">CVC/CVV</label>
+            <input
+              type="text"
+              id="cvc"
+              name="cvc"
+              class="felt"
+              placeholder="CVC/CVV"
+            />
+          </section>
+        </section>
+      </fieldset>
+
+      <!-- Total Amount Section -->
+      <section class="belop">
+        <p class="belop-tekst">Å betale inkl. mva.</p>
+        <p class="belop-verdi">1199 kr</p>
+      </section>
+
+      <!-- Complete Purchase Button -->
+      <footer class="kjop-knapper">
+        <button type="submit" class="fullfor-knapp">Fullfør kjøp</button>
+      </footer>
+
+      <!-- Terms and Agreements -->
+      <section class="betingelser">
+        <p class="betingelser-tekst">
+          Du bekrefter herved at opplysningene og dokumentene du har oppgitt
+          er korrekte og fullstendige. Leverandøren forbeholder seg retten til
+          å heve eller avslutte avtaleforholdet dersom det foreligger uriktige
+          eller ufullstendige opplysninger.
+        </p>
+        <section class="samtykke">
+          <label class="samtykke-valg">
+            <input type="checkbox" name="nyhetsbrev" class="samtykke-kryss" />
+            Ja takk! Send nyhetsbrev til meg.
+          </label>
+          <label class="samtykke-valg">
+            <input
+              type="checkbox"
+              name="tekstmeldinger"
+              class="samtykke-kryss"
+            />
+            Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+          </label>
+        </sect>
+      </section>
+    </form>
+  </section>
      
     <footer class="footer">
       <section class="footer-logo-seksjon">

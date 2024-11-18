@@ -37,66 +37,215 @@
             <li>></li>
             <li><a href="produkt.html"><b>Produkter</b></a></li>
           </ul>
-      
-        <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
-      />
-      <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
-      />
-      <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
-      />
-
-
-      
-      <ul>
-        <li class="produktnavn">produkt navn</li>
-        <li class="merkenavn">merke navn</li>
-        <li class="produktpris">10000kr</li>
-        <li class="farge">farge grå</li>
-      </ul>
-    </section>
-    <ul>
-      <li class="produktnavn"><h4>Produktnavn</h4>sipan</li>
-      <li class="merkenavn"><h4>Merkenavn</h4>Majid</li>
-      <li class="produktpris"><h4>Produktpris</h4>Khalil</li>
-      <li class="farge"><h4>Farge</h4>Dilbrin</li>
-    </ul>
-
-
-
-    <h2 class="lignendeprodukter">Lignende produkter</h2>
-    <section>
-        <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
-      />
-      <article class="produktdetaljer">
-      <h3 class="produktnavn">Fotball</h3>
-      <h4 class="produktpris">800kr</h4>
-      </article>
-
-      <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
-      />
-      <article class="produktdetaljer">
-        <h3 class="produktnavn">Fotball</h3>
-        <h4 class="produktpris">800kr</h4>
-        </article>
-
-      <img
-        class="produktbilde"
-        src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
-      />
-      <article class="produktdetaljer">
-        <h3 class="produktnavn">Fotball</h3>
-        <h4 class="produktpris">800kr</h4>
-        </article>
+          <section class="produktdetal">
+            <section class="produktimgseksjon">
+              <img
+                class="produktimg"
+                src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
+              />
+              <img
+                class="produktimg"
+                src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
+              />
+              <img
+                class="produktimg"
+                src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
+              />
+              <img
+                class="produktimg"
+                src="https://cdn.midjourney.com/fca1a6fc-b6c7-4c2b-a34d-e5c34ebed012/0_0.png"
+              />
+            </section>
+            <section class="produkt-beholder">
+              <header class="produkt-overskrift">
+                <h1 class="produkt-tittel">Produktnavn</h1>
+                <p class="merke-navn">MERKENAVN</p>
+              </header>
+    
+              <p class="pris-detaljer">5 195 kr inkl. mva.</p>
+              <p class="farge-info">Farge: <span class="farge-navn">beige</span></p>
+    
+              <form class="størrelse-skjema">
+                <label for="velg-størrelse" class="størrelse-etikett"
+                  >Velg størrelse</label
+                >
+                <select id="velg-størrelse" class="størrelse-nedtrekksliste">
+                  <option value="">Velg størrelse</option>
+                  <option value="small">Small</option>
+                  <option value="medium">Medium</option>
+                  <option value="large">Large</option>
+                </select>
+                <button type="button" class="handlekurv-knapp">
+                  Legg i handlekurv
+                </button>
+                <button
+                  type="button"
+                  class="ønskeliste-knapp"
+                  aria-label="Legg til ønskeliste"
+                >
+                  ❤
+                </button>
+              </form>
+    
+              <section class="trekkspill-beholder">
+                <details>
+                  <summary class="trekkspill-tittel">
+                    Materiale og vedlikehold
+                  </summary>
+                  <p class="trekkspill-innhold">
+                    Detaljer om materiale og vedlikehold.
+                  </p>
+                </details>
+                <details>
+                  <summary class="trekkspill-tittel">Produktdetaljer</summary>
+                  <p class="trekkspill-innhold">Detaljer om produktet.</p>
+                </details>
+                <details>
+                  <summary class="trekkspill-tittel">Størrelsestabell</summary>
+                  <p class="trekkspill-innhold">Informasjon om størrelser.</p>
+                </details>
+              </section>
+    
+              <footer class="anmeldelser-beholder">
+                <span class="stjerner-visning">⭐⭐⭐⭐☆</span>
+                <span class="anmeldelser-antall">(32)</span>
+              </footer>
+            </section>
+          </section>
+        </section>
+    
+        <h2 class="lignendeprodukter">Lignende produkter</h2>
+        <!-- <section>
+          <img
+            class="produktbilde"
+            src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+          />
+          <article class="produktdetaljer">
+            <h3 class="produktnavn">Fotball</h3>
+            <h4 class="produktpris">800kr</h4>
+          </article>
+    
+          <img
+            class="produktbilde"
+            src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+          />
+          <article class="produktdetaljer">
+            <h3 class="produktnavn">Fotball</h3>
+            <h4 class="produktpris">800kr</h4>
+          </article>
+    
+          <img
+            class="produktbilde"
+            src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+          />
+          <article class="produktdetaljer">
+            <h3 class="produktnavn">Fotball</h3>
+            <h4 class="produktpris">800kr</h4>
+          </article>
+        </section> -->
+        <section class="lignendeprodukt">
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+    
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+    
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+    
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+    
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+    
+          <article>
+            <img
+              class="produktbilde"
+              src="https://cdn.midjourney.com/3cfd10e8-0b4e-4526-bbec-1459727d1196/0_1.png"
+            />
+            <li class="produkt-navn-pris">
+              <h3 class="produktnavn">Produkt Navn</h3>
+              <span class="produktpriser">1200kr</span>
+            </li>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+            <span><b>842 Reviews</b></span>
+          </article>
+        </section>
     </section>
 
     <footer class="footer">
