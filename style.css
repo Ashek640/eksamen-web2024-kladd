@@ -841,10 +841,6 @@ li {
   width: 300px;
 }
 
-.produktbilde {
-  width: 100%;
-  border-radius: 5px;
-}
 
 .produkt-detaljer {
   display: flex;
@@ -1200,23 +1196,23 @@ li {
 }
 
 /* Purchase Button */
-.kjop-knapper {
+.kjøp-knapper {
   display: flex;
   justify-content: center;
   margin-top: 1px;
 }
 
-.fullfor-knapp {
-  background-color: black;
+.fullfør-knapp {
+  background-color: rgb(58, 58, 58);
   color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
+  
 }
 
 /* Terms and Conditions */
@@ -1387,6 +1383,12 @@ li {
     row-gap: 60px;
   }
 
+  
+  .produktbilde {
+    width: 100%;
+    border-radius: 25px;
+  }
+
   .Kategorieoverskrift {
     font-size: 35px;
   }
@@ -1422,6 +1424,7 @@ li {
     grid-row: span 9;
   }
 
+  
   .anmeldelseroverskrift {
     display: flex;
     justify-content: left;
